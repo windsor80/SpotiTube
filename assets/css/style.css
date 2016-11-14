@@ -1,0 +1,32 @@
+nav {
+	background-image: -webkit-linear-gradient(left, #191414 50%, #fff 50%);
+}
+
+.navbar-fixed, nav {
+	height: 80px;
+}
+
+#logo {
+	width: 250px;
+	padding-top: 7px;
+}
+
+div.spotify-wrapper,
+div.youtube-wrapper {
+	height: 100vh; 
+	color: white;
+	padding-top: 20px!important;
+	/* 
+	vh is a unit of measurement of current viewport (window)
+	1vh == 1% viewport height so 100vh == 100% viewport height. 
+	*/
+}
+
+div.row.content::after {
+	content: none; 
+	/*
+	since we're using a row to hold all of our content, materialize's default clearfix
+	adds an annoying ~10px white space to the bottom of the page. 
+	This is a clearfix-fix.
+	 */
+}
